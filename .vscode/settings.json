@@ -1,0 +1,72 @@
+{
+    "[python]": {
+      "editor.formatOnPaste": false,
+      "editor.formatOnSave": true,
+      "editor.insertSpaces": true,
+      "editor.tabSize": 4
+    },
+    "editor.rulers": [
+      80,
+      120
+    ],
+    "python.formatting.provider": "black",
+    "python.linting.pylintArgs": [
+      "--load-plugins",
+      "pylint-flask",
+    ],
+    "python.formatting.blackArgs": ["--line-length", "79"],
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.mypyEnabled": false,
+    "python.linting.mypyArgs": [
+      "--ignore-missing-imports",
+      "--follow-imports=normal",
+      "--show-column-numbers",
+      "--namespace-packages"
+    ],
+    "python.linting.banditEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Path": "pyflakes",
+    "python.linting.pycodestylePath": "pycodestyle",
+    "python.linting.pylintPath": "./venv/bin/pylint",
+    "python.pythonPath": "./venv/bin/python",
+    "python.autoComplete.extraPaths": [
+      "./solutions/"
+    ],
+    "python.analysis.extraPaths": [
+      "./solutions/",
+    ],
+    "yaml.customTags": [
+      "!And",
+      "!And sequence",
+      "!If",
+      "!If sequence",
+      "!Not",
+      "!Not sequence",
+      "!Equals",
+      "!Equals sequence",
+      "!Or",
+      "!Or sequence",
+      "!FindInMap",
+      "!FindInMap sequence",
+      "!Base64",
+      "!Join",
+      "!Join sequence",
+      "!Cidr",
+      "!Ref",
+      "!Sub",
+      "!Sub sequence",
+      "!GetAtt",
+      "!GetAZs",
+      "!ImportValue",
+      "!ImportValue sequence",
+      "!Select",
+      "!Select sequence",
+      "!Split",
+      "!Split sequence"
+    ],
+    "python.linting.enabled": true,
+    "editor.renderWhitespace": "all",
+    "autoDocstring.customTemplatePath": "/home/ivanovsky/.pydocstyle.mustache",
+  }

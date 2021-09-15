@@ -1,5 +1,6 @@
 """Solution to Project Euler Problem 6."""
 
+
 def find_diff(n) -> int:
     """find_diff.
 
@@ -8,8 +9,8 @@ def find_diff(n) -> int:
     formula. That instead calculating the squares
     we only calculate some products.
 
-    Parameters
-    ----------
+    Arguments
+    ---------
     n : int
         The number of terms to differentiate (greater than
         zero).
@@ -27,6 +28,7 @@ def find_diff(n) -> int:
         for y in terms:
             result += x * y if x != y else 0
     return result
-    
+
+
 if __name__ == "__main__":
     print(find_diff(100))

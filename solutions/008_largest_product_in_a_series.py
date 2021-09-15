@@ -1,5 +1,6 @@
 """Solution to Project Euler problem 8."""
 
+
 def get_product(digits: list) -> int:
     """get_product.
 
@@ -13,6 +14,11 @@ def get_product(digits: list) -> int:
     Returns
     -------
     int : The product of the digits.
+
+    Examples
+    --------
+    >>> get_product(["1", "2", "3"])
+    6
     """
     product = 1
     for digit in digits:
@@ -20,6 +26,7 @@ def get_product(digits: list) -> int:
             return 0
         product *= int(digit)
     return product
+
 
 def find_largest_product_in_a_series(s: str, n: int) -> int:
     """find_largest_product_in_a_series.
@@ -37,6 +44,11 @@ def find_largest_product_in_a_series(s: str, n: int) -> int:
     Returns
     -------
     int : The maximum product of n-digits.
+
+    Examples
+    --------
+    >>> find_largest_product_in_a_series("123456", 3)
+    120
     """
     i = 0
     j = i + n
@@ -51,9 +63,10 @@ def find_largest_product_in_a_series(s: str, n: int) -> int:
         j += 1
     return max_product
 
+
 if __name__ == "__main__":
-    filepath = "./files/1000-digit-number.txt"
-    with open(filepath, "r", encoding="utf-8") as f:
+    FILEPATH = "./files/1000-digit-number.txt"
+    with open(FILEPATH, "r", encoding="utf-8") as f:
         content = f.readlines()
-    s = "".join([x.replace("\n", "") for x in content])
-    print(find_largest_product_in_a_series(s, 13))
+    STRING = "".join([x.replace("\n", "") for x in content])
+    print(find_largest_product_in_a_series(STRING, 13))
