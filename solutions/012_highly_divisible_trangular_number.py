@@ -12,8 +12,6 @@ def prime_decomposition(n: int) -> int:
 
     Arguments
     ----------
-    primes : List[int]
-        A primes list to find the decomposition.
     n : int
         The number to find its amount of divisors.
 
